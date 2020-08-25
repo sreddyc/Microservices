@@ -1,0 +1,121 @@
+2020-08-10T22:43:21.2609762-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: FileConfigurationPoller is starting.
+2020-08-10T22:43:21.9379642-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "https://localhost:5001"
+2020-08-10T22:43:21.9402395-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5000"
+2020-08-10T22:43:21.9465660-04:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-08-10T22:43:21.9506376-04:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-08-10T22:43:21.9773101-04:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Source\TechStack\eCommerceSite\apigatewayservice"
+2020-08-10T22:43:22.5121035-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Started polling
+2020-08-10T22:43:22.5352651-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Finished polling
+2020-08-10T22:43:23.5133015-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Started polling
+2020-08-10T22:43:23.5208274-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Finished polling
+2020-08-10T22:43:24.5121336-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Started polling
+2020-08-10T22:43:24.5155753-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Finished polling
+2020-08-10T22:43:25.5139122-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Started polling
+2020-08-10T22:43:25.5732507-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Finished polling
+2020-08-10T22:43:26.5138536-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Started polling
+2020-08-10T22:43:26.5309703-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Finished polling
+2020-08-10T22:43:27.5133835-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Started polling
+2020-08-10T22:43:27.5187016-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Finished polling
+2020-08-10T22:43:28.5122600-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Started polling
+2020-08-10T22:43:28.5180363-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Finished polling
+2020-08-10T22:43:29.5109716-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Started polling
+2020-08-10T22:43:29.5185552-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Finished polling
+2020-08-10T22:43:30.5141531-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Started polling
+2020-08-10T22:43:30.5349836-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Finished polling
+2020-08-10T22:43:31.5139600-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Started polling
+2020-08-10T22:43:31.5305444-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Finished polling
+2020-08-10T22:43:32.5134386-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Started polling
+2020-08-10T22:43:32.5201181-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Finished polling
+2020-08-10T22:43:33.5018558-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Started polling
+2020-08-10T22:43:33.5126270-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Finished polling
+2020-08-10T22:43:34.5157162-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Started polling
+2020-08-10T22:43:34.5347339-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Finished polling
+2020-08-10T22:43:35.5120430-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Started polling
+2020-08-10T22:43:35.5186118-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Finished polling
+2020-08-10T22:43:36.5022358-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Started polling
+2020-08-10T22:43:36.5113842-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Finished polling
+2020-08-10T22:43:37.5016220-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Started polling
+2020-08-10T22:43:37.5268138-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Finished polling
+2020-08-10T22:43:38.5012937-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Started polling
+2020-08-10T22:43:38.5103020-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Finished polling
+2020-08-10T22:43:39.5012962-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Started polling
+2020-08-10T22:43:39.5088782-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Finished polling
+2020-08-10T22:43:40.5004509-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Started polling
+2020-08-10T22:43:40.5107778-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Finished polling
+2020-08-10T22:43:41.5016782-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Started polling
+2020-08-10T22:43:41.5175103-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Finished polling
+2020-08-10T22:43:42.1297590-04:00 [INF] (Microsoft.Hosting.Lifetime) Application is shutting down...
+2020-08-10T22:43:42.1494874-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: FileConfigurationPoller is stopping.
+2020-08-10T22:48:27.7347599-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: FileConfigurationPoller is starting.
+2020-08-10T22:48:28.4375476-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "https://localhost:5001"
+2020-08-10T22:48:28.4385527-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5000"
+2020-08-10T22:48:28.4388791-04:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-08-10T22:48:28.4390003-04:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-08-10T22:48:28.4391153-04:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Source\TechStack\eCommerceSite\ApiGatewayService"
+2020-08-10T22:48:29.2099087-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Started polling
+2020-08-10T22:48:29.2430461-04:00 [WRN] (Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware) requestId: 0HM1TK43F1B0I:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET.
+2020-08-10T22:48:29.2485581-04:00 [WRN] (Ocelot.Responder.Middleware.ResponderMiddleware) requestId: 0HM1TK43F1B0I:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/, request method: GET
+2020-08-10T22:48:29.2667839-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Finished polling
+2020-08-10T22:48:30.2011611-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Started polling
+2020-08-10T22:48:30.2318259-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Finished polling
+2020-08-10T22:48:31.1936685-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Started polling
+2020-08-10T22:48:31.2118400-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Finished polling
+2020-08-10T22:48:32.2005551-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Started polling
+2020-08-10T22:48:32.2060253-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Finished polling
+2020-08-10T22:48:33.1909591-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Started polling
+2020-08-10T22:48:33.1972779-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Finished polling
+2020-08-10T22:48:34.1919339-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Started polling
+2020-08-10T22:48:34.2122366-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Finished polling
+2020-08-10T22:48:35.2022775-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Started polling
+2020-08-10T22:48:35.2113504-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Finished polling
+2020-08-10T22:48:36.1988078-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Started polling
+2020-08-10T22:48:36.2026880-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Finished polling
+2020-08-10T22:48:37.1981866-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Started polling
+2020-08-10T22:48:37.2012342-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Finished polling
+2020-08-10T22:48:38.1994678-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Started polling
+2020-08-10T22:48:38.2039089-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Finished polling
+2020-08-10T22:48:39.1926843-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Started polling
+2020-08-10T22:48:39.2191248-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Finished polling
+2020-08-10T22:49:07.2645137-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: FileConfigurationPoller is starting.
+2020-08-10T22:49:50.0746200-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: FileConfigurationPoller is starting.
+2020-08-10T22:49:50.4721187-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "https://localhost:5001"
+2020-08-10T22:49:50.4745508-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5000"
+2020-08-10T22:49:50.4766671-04:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-08-10T22:49:50.4786348-04:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-08-10T22:49:50.4804556-04:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Source\TechStack\eCommerceSite\apigatewayservice"
+2020-08-10T22:49:51.3634807-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Started polling
+2020-08-10T22:49:51.4162888-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Finished polling
+2020-08-10T22:49:52.3684131-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Started polling
+2020-08-10T22:49:52.4041321-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Finished polling
+2020-08-10T22:49:53.3670365-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Started polling
+2020-08-10T22:49:53.3731802-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Finished polling
+2020-08-10T22:49:54.3669211-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Started polling
+2020-08-10T22:49:54.3823108-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Finished polling
+2020-08-10T22:49:55.3676310-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Started polling
+2020-08-10T22:49:55.3854197-04:00 [INF] (Microsoft.Hosting.Lifetime) Application is shutting down...
+2020-08-10T22:49:55.4031133-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Finished polling
+2020-08-10T22:49:55.4118789-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: FileConfigurationPoller is stopping.
+2020-08-10T22:50:48.3210979-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: FileConfigurationPoller is starting.
+2020-08-10T22:50:48.7251000-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "https://localhost:5001"
+2020-08-10T22:50:48.7266628-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5000"
+2020-08-10T22:50:48.7289840-04:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-08-10T22:50:48.7309729-04:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-08-10T22:50:48.7441280-04:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Source\TechStack\eCommerceSite\apigatewayservice"
+2020-08-10T22:50:49.6244497-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Started polling
+2020-08-10T22:50:49.6921937-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Finished polling
+2020-08-10T22:50:50.6235171-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Started polling
+2020-08-10T22:50:50.6396333-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Finished polling
+2020-08-10T22:50:51.6183403-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Started polling
+2020-08-10T22:50:51.6388770-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Finished polling
+2020-08-10T22:50:52.6227335-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Started polling
+2020-08-10T22:50:52.6409566-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Finished polling
+2020-08-10T22:50:53.6255836-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Started polling
+2020-08-10T22:50:53.6344505-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: Finished polling
+2020-08-10T22:50:54.2822901-04:00 [INF] (Microsoft.Hosting.Lifetime) Application is shutting down...
+2020-08-10T22:50:54.2942937-04:00 [INF] (Ocelot.Configuration.Repository.FileConfigurationPoller) requestId: no request id, previousRequestId: no previous request id, message: FileConfigurationPoller is stopping.
+2020-08-10T22:51:23.8687093-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "https://localhost:5001"
+2020-08-10T22:51:23.9180045-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5000"
+2020-08-10T22:51:23.9203146-04:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-08-10T22:51:23.9218575-04:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-08-10T22:51:23.9236081-04:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Source\TechStack\eCommerceSite\apigatewayservice"
+2020-08-10T22:52:31.6141978-04:00 [INF] (Microsoft.Hosting.Lifetime) Application is shutting down...

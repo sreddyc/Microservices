@@ -1,0 +1,31 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: ecomm-aks-ingress
+  namespace: default
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    ingress.bluemix.net/rewrite-path: "serviceName=ecommwebui-service rewrite=/"
+    kubernetes.io/tls-acme: 'true'
+    cert-manager.io/cluster-issuer: letsencrypt
+    # ingress.kubernetes.io/ssl-redirect: "true"
+    # nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    # nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+spec:
+  tls:
+  - hosts:
+    - earnwhileyouteach.com
+    secretName: joomla-tls-cert # selfsigned-cert-tls # aks-ingress-tls
+  rules:
+  - host: earnwhileyouteach.com
+    http:
+      paths:
+      - path: /gateway
+        backend:
+          serviceName: apigateway-service
+          servicePort: 80
+      - path: /
+        backend:
+          serviceName: ecommwebui-service
+          servicePort: 80
+        

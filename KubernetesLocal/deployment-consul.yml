@@ -1,0 +1,44 @@
+apiVersion: apps/v1  # API version
+kind: Deployment
+metadata:
+  name: consul # Unique name for the deployment
+  labels:
+    app: consul       # Labels to be applied to this deployment
+spec:
+  selector:
+    matchLabels:     # This deployment applies to the Pods matching these labels
+      app: consul
+  replicas: 1        # Run a single pod in the deployment
+  template:          # Template for the pods that will be created by this deployment
+    metadata:
+      labels:        # Labels to be applied to the Pods in this deployment
+        app: consul
+    spec:            # Spec for the container which will be run inside the Pod.
+      containers:
+      - name: consul
+        image: consul
+        resources:
+          requests:
+            cpu: 100m
+            memory: 100Mi
+        ports:
+      #  - containerPort: 8600
+        - containerPort: 8500
+---        
+apiVersion: v1
+kind: Service        # Type of Kubernetes resource
+metadata:
+  name: consul # Name of the Kubernetes resource
+  labels:            # Labels that will be applied to this resource
+    app: consul
+spec:
+  type: LoadBalancer
+  ports:
+  # - name: management 
+  #   port: 8600       # Map incoming connections on port 8600 to the target port 8600 of the Pod
+  #   targetPort: 8600
+  - name: ui 
+    port: 8500       # Map incoming connections on port 8600 to the target port 8600 of the Pod
+    targetPort: 8500
+  selector:          # Map any Pod with the specified labels to this service
+    app: consul

@@ -1,0 +1,48 @@
+# kubectl create secret generic apigateway-appsettings --from-file=./ocelot.secrets.json
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: apigateway
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: apigateway-pod
+  template:
+    metadata:
+      labels:
+        app: apigateway-pod
+    spec:
+      containers:
+      - name: apigateway
+        image: apigateway/api:v1 #gcr.io/future-depth-264320/apigateway:v1
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 80
+        volumeMounts:
+        - name: secrets
+          mountPath: /app/secrets
+          readOnly: true
+      volumes:
+      - name: secrets
+        secret:
+          secretName: apigateway-appsettings
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: apigateway-service
+spec:
+  selector:
+    app: apigateway-pod
+  ports:
+  - port: 5300
+    targetPort: 80
+  type: LoadBalancer
+  #  nodePort: 31002
+  #type: NodePort
+
+

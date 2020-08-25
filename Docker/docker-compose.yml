@@ -1,0 +1,71 @@
+﻿version: "3.8"
+
+networks:
+  backend:
+  frontend:
+
+services:
+  cartapi:
+    image: cartservice/api:v1
+    container_name: cartapi
+    build:
+      context: ..\CartService
+      dockerfile: Dockerfile
+    ports:
+      - '5200:80'
+    networks:
+      - backend 
+ 
+  orderapi:
+    image: orderservice/api:v5
+    container_name: orderapi
+    build:
+      context: ..\OrderService
+      dockerfile: Dockerfile
+    ports:
+      - '5000:80'
+    networks:
+      - backend 
+
+  productapi:
+    image: productservice/api:v1
+    container_name: productapi
+    build:
+      context: ..\ProductService
+      dockerfile: Dockerfile
+    ports:
+      - '5100:80'
+    networks:
+      - backend
+  
+  webui:
+    image: ecommwebui/spa:v1
+    container_name: ecommwebui
+    build:
+      context: ..\WebUI
+      dockerfile: Dockerfile
+    ports:
+      - '4200:80'
+    networks:
+      - frontend
+  # webui:
+  #   image: ecommwebui/spa:v1
+  #   container_name: ecommwebui
+  #   build:
+  #     context: ..\EcommUIService
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - '4200:80'
+  #   networks:
+  #     - frontend
+      
+  apigateway:
+    image: apigateway/api:v1
+    container_name: apigateway
+    build:
+      context: ..\ApiGatewayService
+      dockerfile: Dockerfile
+    ports:
+      - '5300:80'
+    networks:
+      - backend     

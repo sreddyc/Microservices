@@ -1,0 +1,8 @@
+{"@t":"2020-08-07T13:52:37.3698897Z","@mt":"Registering with Consul","SourceContext":"AppExtensions","ProcessId":31792,"ThreadId":1,"ApplicationName":"API","Environment":"Production"}
+{"@t":"2020-08-07T13:52:37.9439565Z","@mt":"Now listening on: {address}","address":"https://localhost:5101","SourceContext":"Microsoft.Hosting.Lifetime","ProcessId":31792,"ThreadId":1,"ApplicationName":"API","Environment":"Production"}
+{"@t":"2020-08-07T13:52:37.9489466Z","@mt":"Now listening on: {address}","address":"http://localhost:5100","SourceContext":"Microsoft.Hosting.Lifetime","ProcessId":31792,"ThreadId":1,"ApplicationName":"API","Environment":"Production"}
+{"@t":"2020-08-07T13:52:37.9652477Z","@mt":"Application started. Press Ctrl+C to shut down.","SourceContext":"Microsoft.Hosting.Lifetime","ProcessId":31792,"ThreadId":1,"ApplicationName":"API","Environment":"Production"}
+{"@t":"2020-08-07T13:52:37.9670134Z","@mt":"Hosting environment: {envName}","envName":"Production","SourceContext":"Microsoft.Hosting.Lifetime","ProcessId":31792,"ThreadId":1,"ApplicationName":"API","Environment":"Production"}
+{"@t":"2020-08-07T13:52:37.9849567Z","@mt":"Content root path: {contentRoot}","contentRoot":"C:\\Source\\TechStack\\eCommerceSite\\ProductService\\API","SourceContext":"Microsoft.Hosting.Lifetime","ProcessId":31792,"ThreadId":1,"ApplicationName":"API","Environment":"Production"}
+{"@t":"2020-08-07T13:53:11.9605540Z","@mt":"Unregistering from Consul","SourceContext":"AppExtensions","ProcessId":31792,"ThreadId":14,"ApplicationName":"API","Environment":"Production"}
+{"@t":"2020-08-07T13:53:11.9645779Z","@mt":"Application is shutting down...","SourceContext":"Microsoft.Hosting.Lifetime","ProcessId":31792,"ThreadId":14,"ApplicationName":"API","Environment":"Production"}

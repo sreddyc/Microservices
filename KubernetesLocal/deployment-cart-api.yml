@@ -1,0 +1,48 @@
+# kubectl create secret generic cart-appsettings --from-file=./appsettings.secrets.json
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cartapi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cart-pod
+  template:
+    metadata:
+      labels:
+        app: cart-pod
+    spec:
+      containers:
+      - name: cartapi
+        image: cartservice/api:v1
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "100m"
+        ports:
+        - containerPort: 80
+        volumeMounts:
+        - name: secrets
+          mountPath: /app/secrets
+          readOnly: true
+      volumes:
+      - name: secrets
+        secret:
+          secretName: cart-appsettings
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cart-service
+spec:
+  selector:
+    app: cart-pod
+  ports:
+  - port: 5200
+    targetPort: 80
+  type: ClusterIP
+  #  nodePort: 31002
+  #type: NodePort
+
+

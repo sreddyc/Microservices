@@ -1,0 +1,493 @@
+2020-08-16T21:05:30.4968043-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5000"
+2020-08-16T21:05:30.5605121-04:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-08-16T21:05:30.5684199-04:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Production"
+2020-08-16T21:05:30.5711595-04:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Source\TechStack\eCommerceSite\apigatewayservice"
+2020-08-16T21:08:57.5524809-04:00 [WRN] (Ocelot.Responder.Middleware.ResponderMiddleware) requestId: 0HM2298F19PGE:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindLoadBalancerError Message: unabe to find load balancer for /gateway/ps/{url}|Get,Post,Put,Delete| exception is System.InvalidOperationException: KubeApiClient.CreateFromPodServiceAccount can only be called when running in a Kubernetes Pod (KUBERNETES_SERVICE_HOST and/or KUBERNETES_SERVICE_PORT environment variable is not defined).
+   at KubeClient.KubeClientOptions.FromPodServiceAccount()
+   at KubeClient.KubeApiClient.CreateFromPodServiceAccount(ILoggerFactory loggerFactory)
+   at KubeClient.ClientRegistrationExtensions.<>c.<AddKubeClient>g__ResolveWithPodServiceAccount|0_0(IServiceProvider serviceProvider)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Ocelot.Provider.Kubernetes.KubernetesProviderFactory.GetKubeProvider(IServiceProvider provider, ServiceProviderConfiguration config, DownstreamRoute route, IOcelotLoggerFactory factory)
+   at Ocelot.Provider.Kubernetes.KubernetesProviderFactory.<>c.<.cctor>b__2_0(IServiceProvider provider, ServiceProviderConfiguration config, DownstreamRoute route)
+   at Ocelot.ServiceDiscovery.ServiceDiscoveryProviderFactory.GetServiceDiscoveryProvider(ServiceProviderConfiguration config, DownstreamRoute route)
+   at Ocelot.ServiceDiscovery.ServiceDiscoveryProviderFactory.Get(ServiceProviderConfiguration serviceConfig, DownstreamRoute route)
+   at Ocelot.LoadBalancer.LoadBalancers.LoadBalancerFactory.Get(DownstreamRoute route, ServiceProviderConfiguration config)
+   at Ocelot.LoadBalancer.LoadBalancers.LoadBalancerHouse.Get(DownstreamRoute route, ServiceProviderConfiguration config) errors found in ResponderMiddleware. Setting error response for request path:/gateway/ps/api/Products/5f219d69b718a5b74cc07147, request method: GET
+2020-08-16T21:09:37.1915173-04:00 [INF] (Microsoft.Hosting.Lifetime) Application is shutting down...
+2020-08-16T21:09:51.4182203-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5000"
+2020-08-16T21:09:51.4901995-04:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-08-16T21:09:51.4919616-04:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Production"
+2020-08-16T21:09:51.4935234-04:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Source\TechStack\eCommerceSite\apigatewayservice"
+2020-08-16T21:10:01.4659837-04:00 [ERR] (Ocelot.Errors.Middleware.ExceptionHandlerMiddleware) requestId: 0HM22992260RB:00000001, previousRequestId: no previous request id, message: Exception caught in global error handler, exception message: No such host is known., exception stack:    at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Consul.GetRequest`1.Execute(CancellationToken ct)
+   at Ocelot.Provider.Consul.Consul.Get()
+   at Ocelot.LoadBalancer.LoadBalancers.LeastConnectionCreator.<>c__DisplayClass0_0.<<Create>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Ocelot.LoadBalancer.LoadBalancers.LeastConnection.Lease(HttpContext httpContext)
+   at Ocelot.LoadBalancer.Middleware.LoadBalancingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.DownstreamPathManipulation.Middleware.ClaimsToDownstreamPathMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.QueryStrings.Middleware.ClaimsToQueryStringMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Headers.Middleware.ClaimsToHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Authorisation.Middleware.AuthorisationMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Claims.Middleware.ClaimsToClaimsMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Authentication.Middleware.AuthenticationMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.RequestId.Middleware.RequestIdMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.RateLimit.Middleware.ClientRateLimitMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Request.Middleware.DownstreamRequestInitialiserMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Headers.Middleware.HttpHeadersTransformationMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Security.Middleware.SecurityMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Multiplexer.MultiplexingMiddleware.Fire(HttpContext httpContext, RequestDelegate next)
+   at Ocelot.Multiplexer.MultiplexingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Responder.Middleware.ResponderMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Errors.Middleware.ExceptionHandlerMiddleware.Invoke(HttpContext httpContext), inner exception message No such host is known., inner exception stack    at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken) RequestId: 0HM22992260RB:00000001
+System.Net.Http.HttpRequestException: No such host is known.
+ ---> System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Consul.GetRequest`1.Execute(CancellationToken ct)
+   at Ocelot.Provider.Consul.Consul.Get()
+   at Ocelot.LoadBalancer.LoadBalancers.LeastConnectionCreator.<>c__DisplayClass0_0.<<Create>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Ocelot.LoadBalancer.LoadBalancers.LeastConnection.Lease(HttpContext httpContext)
+   at Ocelot.LoadBalancer.Middleware.LoadBalancingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.DownstreamPathManipulation.Middleware.ClaimsToDownstreamPathMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.QueryStrings.Middleware.ClaimsToQueryStringMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Headers.Middleware.ClaimsToHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Authorisation.Middleware.AuthorisationMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Claims.Middleware.ClaimsToClaimsMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Authentication.Middleware.AuthenticationMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.RequestId.Middleware.RequestIdMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.RateLimit.Middleware.ClientRateLimitMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Request.Middleware.DownstreamRequestInitialiserMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Headers.Middleware.HttpHeadersTransformationMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Security.Middleware.SecurityMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Multiplexer.MultiplexingMiddleware.Fire(HttpContext httpContext, RequestDelegate next)
+   at Ocelot.Multiplexer.MultiplexingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Responder.Middleware.ResponderMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Errors.Middleware.ExceptionHandlerMiddleware.Invoke(HttpContext httpContext)
+2020-08-16T21:13:38.8406241-04:00 [INF] (Microsoft.Hosting.Lifetime) Application is shutting down...
+2020-08-16T21:14:36.9968714-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5000"
+2020-08-16T21:14:37.0524211-04:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-08-16T21:14:37.0547964-04:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Production"
+2020-08-16T21:14:37.0559228-04:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Source\TechStack\eCommerceSite\apigatewayservice"
+2020-08-16T21:14:44.5116227-04:00 [ERR] (Ocelot.Errors.Middleware.ExceptionHandlerMiddleware) requestId: 0HM229BMDV90I:00000001, previousRequestId: no previous request id, message: Exception caught in global error handler, exception message: No such host is known., exception stack:    at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Consul.GetRequest`1.Execute(CancellationToken ct)
+   at Ocelot.Provider.Consul.Consul.Get()
+   at Ocelot.LoadBalancer.LoadBalancers.LeastConnectionCreator.<>c__DisplayClass0_0.<<Create>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Ocelot.LoadBalancer.LoadBalancers.LeastConnection.Lease(HttpContext httpContext)
+   at Ocelot.LoadBalancer.Middleware.LoadBalancingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.DownstreamPathManipulation.Middleware.ClaimsToDownstreamPathMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.QueryStrings.Middleware.ClaimsToQueryStringMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Headers.Middleware.ClaimsToHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Authorisation.Middleware.AuthorisationMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Claims.Middleware.ClaimsToClaimsMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Authentication.Middleware.AuthenticationMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.RequestId.Middleware.RequestIdMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.RateLimit.Middleware.ClientRateLimitMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Request.Middleware.DownstreamRequestInitialiserMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Headers.Middleware.HttpHeadersTransformationMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Security.Middleware.SecurityMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Multiplexer.MultiplexingMiddleware.Fire(HttpContext httpContext, RequestDelegate next)
+   at Ocelot.Multiplexer.MultiplexingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Responder.Middleware.ResponderMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Errors.Middleware.ExceptionHandlerMiddleware.Invoke(HttpContext httpContext), inner exception message No such host is known., inner exception stack    at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken) RequestId: 0HM229BMDV90I:00000001
+System.Net.Http.HttpRequestException: No such host is known.
+ ---> System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Consul.GetRequest`1.Execute(CancellationToken ct)
+   at Ocelot.Provider.Consul.Consul.Get()
+   at Ocelot.LoadBalancer.LoadBalancers.LeastConnectionCreator.<>c__DisplayClass0_0.<<Create>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Ocelot.LoadBalancer.LoadBalancers.LeastConnection.Lease(HttpContext httpContext)
+   at Ocelot.LoadBalancer.Middleware.LoadBalancingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.DownstreamPathManipulation.Middleware.ClaimsToDownstreamPathMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.QueryStrings.Middleware.ClaimsToQueryStringMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Headers.Middleware.ClaimsToHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Authorisation.Middleware.AuthorisationMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Claims.Middleware.ClaimsToClaimsMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Authentication.Middleware.AuthenticationMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.RequestId.Middleware.RequestIdMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.RateLimit.Middleware.ClientRateLimitMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Request.Middleware.DownstreamRequestInitialiserMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Headers.Middleware.HttpHeadersTransformationMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Security.Middleware.SecurityMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Multiplexer.MultiplexingMiddleware.Fire(HttpContext httpContext, RequestDelegate next)
+   at Ocelot.Multiplexer.MultiplexingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Responder.Middleware.ResponderMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Errors.Middleware.ExceptionHandlerMiddleware.Invoke(HttpContext httpContext)
+2020-08-16T21:15:37.2236502-04:00 [INF] (Microsoft.Hosting.Lifetime) Application is shutting down...
+2020-08-16T21:16:24.4943295-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5000"
+2020-08-16T21:16:24.6072610-04:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-08-16T21:16:24.6121682-04:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Production"
+2020-08-16T21:16:24.6141747-04:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Source\TechStack\eCommerceSite\apigatewayservice"
+2020-08-16T21:17:03.6021815-04:00 [ERR] (Ocelot.Errors.Middleware.ExceptionHandlerMiddleware) requestId: 0HM229CMQEUVG:00000002, previousRequestId: no previous request id, message: Exception caught in global error handler, exception message: No such host is known., exception stack:    at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Consul.GetRequest`1.Execute(CancellationToken ct)
+   at Ocelot.Provider.Consul.Consul.Get()
+   at Ocelot.LoadBalancer.LoadBalancers.LeastConnectionCreator.<>c__DisplayClass0_0.<<Create>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Ocelot.LoadBalancer.LoadBalancers.LeastConnection.Lease(HttpContext httpContext)
+   at Ocelot.LoadBalancer.Middleware.LoadBalancingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.DownstreamPathManipulation.Middleware.ClaimsToDownstreamPathMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.QueryStrings.Middleware.ClaimsToQueryStringMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Headers.Middleware.ClaimsToHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Authorisation.Middleware.AuthorisationMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Claims.Middleware.ClaimsToClaimsMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Authentication.Middleware.AuthenticationMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.RequestId.Middleware.RequestIdMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.RateLimit.Middleware.ClientRateLimitMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Request.Middleware.DownstreamRequestInitialiserMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Headers.Middleware.HttpHeadersTransformationMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Security.Middleware.SecurityMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Multiplexer.MultiplexingMiddleware.Fire(HttpContext httpContext, RequestDelegate next)
+   at Ocelot.Multiplexer.MultiplexingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Responder.Middleware.ResponderMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Errors.Middleware.ExceptionHandlerMiddleware.Invoke(HttpContext httpContext), inner exception message No such host is known., inner exception stack    at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken) RequestId: 0HM229CMQEUVG:00000002
+System.Net.Http.HttpRequestException: No such host is known.
+ ---> System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Consul.GetRequest`1.Execute(CancellationToken ct)
+   at Ocelot.Provider.Consul.Consul.Get()
+   at Ocelot.LoadBalancer.LoadBalancers.LeastConnectionCreator.<>c__DisplayClass0_0.<<Create>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Ocelot.LoadBalancer.LoadBalancers.LeastConnection.Lease(HttpContext httpContext)
+   at Ocelot.LoadBalancer.Middleware.LoadBalancingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.DownstreamPathManipulation.Middleware.ClaimsToDownstreamPathMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.QueryStrings.Middleware.ClaimsToQueryStringMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Headers.Middleware.ClaimsToHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Authorisation.Middleware.AuthorisationMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Claims.Middleware.ClaimsToClaimsMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Authentication.Middleware.AuthenticationMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.RequestId.Middleware.RequestIdMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.RateLimit.Middleware.ClientRateLimitMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Request.Middleware.DownstreamRequestInitialiserMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Headers.Middleware.HttpHeadersTransformationMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Security.Middleware.SecurityMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Multiplexer.MultiplexingMiddleware.Fire(HttpContext httpContext, RequestDelegate next)
+   at Ocelot.Multiplexer.MultiplexingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Responder.Middleware.ResponderMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Errors.Middleware.ExceptionHandlerMiddleware.Invoke(HttpContext httpContext)
+2020-08-16T21:17:39.5365771-04:00 [INF] (Microsoft.Hosting.Lifetime) Application is shutting down...
+2020-08-16T21:21:25.6284149-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5000"
+2020-08-16T21:21:25.6922488-04:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-08-16T21:21:25.6943751-04:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Production"
+2020-08-16T21:21:25.6958498-04:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Source\TechStack\eCommerceSite\apigatewayservice"
+2020-08-16T21:21:52.5098392-04:00 [ERR] (Ocelot.Errors.Middleware.ExceptionHandlerMiddleware) requestId: 0HM229FM0CND1:00000001, previousRequestId: no previous request id, message: Exception caught in global error handler, exception message: No such host is known., exception stack:    at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Consul.GetRequest`1.Execute(CancellationToken ct)
+   at Ocelot.Provider.Consul.Consul.Get()
+   at Ocelot.LoadBalancer.LoadBalancers.LeastConnectionCreator.<>c__DisplayClass0_0.<<Create>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Ocelot.LoadBalancer.LoadBalancers.LeastConnection.Lease(HttpContext httpContext)
+   at Ocelot.LoadBalancer.Middleware.LoadBalancingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.DownstreamPathManipulation.Middleware.ClaimsToDownstreamPathMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.QueryStrings.Middleware.ClaimsToQueryStringMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Headers.Middleware.ClaimsToHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Authorisation.Middleware.AuthorisationMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Claims.Middleware.ClaimsToClaimsMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Authentication.Middleware.AuthenticationMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.RequestId.Middleware.RequestIdMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.RateLimit.Middleware.ClientRateLimitMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Request.Middleware.DownstreamRequestInitialiserMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Headers.Middleware.HttpHeadersTransformationMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Security.Middleware.SecurityMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Multiplexer.MultiplexingMiddleware.Fire(HttpContext httpContext, RequestDelegate next)
+   at Ocelot.Multiplexer.MultiplexingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Responder.Middleware.ResponderMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Errors.Middleware.ExceptionHandlerMiddleware.Invoke(HttpContext httpContext), inner exception message No such host is known., inner exception stack    at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken) RequestId: 0HM229FM0CND1:00000001
+System.Net.Http.HttpRequestException: No such host is known.
+ ---> System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Consul.GetRequest`1.Execute(CancellationToken ct)
+   at Ocelot.Provider.Consul.Consul.Get()
+   at Ocelot.LoadBalancer.LoadBalancers.LeastConnectionCreator.<>c__DisplayClass0_0.<<Create>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Ocelot.LoadBalancer.LoadBalancers.LeastConnection.Lease(HttpContext httpContext)
+   at Ocelot.LoadBalancer.Middleware.LoadBalancingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.DownstreamPathManipulation.Middleware.ClaimsToDownstreamPathMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.QueryStrings.Middleware.ClaimsToQueryStringMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Headers.Middleware.ClaimsToHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Authorisation.Middleware.AuthorisationMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Claims.Middleware.ClaimsToClaimsMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Authentication.Middleware.AuthenticationMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.RequestId.Middleware.RequestIdMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.RateLimit.Middleware.ClientRateLimitMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Request.Middleware.DownstreamRequestInitialiserMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Headers.Middleware.HttpHeadersTransformationMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Security.Middleware.SecurityMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Multiplexer.MultiplexingMiddleware.Fire(HttpContext httpContext, RequestDelegate next)
+   at Ocelot.Multiplexer.MultiplexingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Responder.Middleware.ResponderMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Errors.Middleware.ExceptionHandlerMiddleware.Invoke(HttpContext httpContext)
+2020-08-16T21:28:41.1237419-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5000"
+2020-08-16T21:28:41.1876826-04:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-08-16T21:28:41.1895157-04:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Production"
+2020-08-16T21:28:41.1908480-04:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Source\TechStack\eCommerceSite\apigatewayservice"
+2020-08-16T21:35:00.4244781-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5000"
+2020-08-16T21:35:00.4790784-04:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-08-16T21:35:00.4805499-04:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Production"
+2020-08-16T21:35:00.4819225-04:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Source\TechStack\eCommerceSite\apigatewayservice"
+2020-08-16T21:36:09.4412746-04:00 [INF] (Microsoft.Hosting.Lifetime) Application is shutting down...
+2020-08-16T21:38:33.3648396-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5000"
+2020-08-16T21:38:33.4238837-04:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-08-16T21:38:33.4262971-04:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Production"
+2020-08-16T21:38:33.4293478-04:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Source\TechStack\eCommerceSite\apigatewayservice"
+2020-08-16T21:39:55.1156838-04:00 [WRN] (Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware) requestId: 0HM229POM0C21:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET.
+2020-08-16T21:39:55.1236005-04:00 [WRN] (Ocelot.Responder.Middleware.ResponderMiddleware) requestId: 0HM229POM0C21:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/, request method: GET
+2020-08-16T21:40:09.7486165-04:00 [WRN] (Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware) requestId: 0HM229POM0C21:00000002, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /gateway/ui, verb: GET.
+2020-08-16T21:40:09.7578882-04:00 [WRN] (Ocelot.Responder.Middleware.ResponderMiddleware) requestId: 0HM229POM0C21:00000002, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /gateway/ui, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/gateway/ui, request method: GET
+2020-08-16T21:40:54.1524065-04:00 [INF] (Microsoft.Hosting.Lifetime) Application is shutting down...
+2020-08-16T21:41:00.3733972-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5000"
+2020-08-16T21:41:00.4545604-04:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-08-16T21:41:00.4589034-04:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Production"
+2020-08-16T21:41:00.4608040-04:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Source\TechStack\eCommerceSite\apigatewayservice"
+2020-08-16T21:41:07.5983331-04:00 [WRN] (Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware) requestId: 0HM229QE972C5:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET.
+2020-08-16T21:41:07.6082286-04:00 [WRN] (Ocelot.Responder.Middleware.ResponderMiddleware) requestId: 0HM229QE972C5:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/, request method: GET
+2020-08-16T21:41:23.8469038-04:00 [INF] (Microsoft.Hosting.Lifetime) Application is shutting down...
+2020-08-16T21:41:33.1007966-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5000"
+2020-08-16T21:41:33.1609758-04:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-08-16T21:41:33.1625335-04:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Production"
+2020-08-16T21:41:33.1640163-04:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Source\TechStack\eCommerceSite\apigatewayservice"
+2020-08-16T21:41:38.2891230-04:00 [WRN] (Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware) requestId: 0HM229QNE41TE:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET.
+2020-08-16T21:41:38.2969462-04:00 [WRN] (Ocelot.Responder.Middleware.ResponderMiddleware) requestId: 0HM229QNE41TE:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/, request method: GET
+2020-08-16T21:43:09.7369059-04:00 [INF] (Microsoft.Hosting.Lifetime) Application is shutting down...
+2020-08-16T21:48:26.1579137-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5300"
+2020-08-16T21:48:26.2079698-04:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-08-16T21:48:26.2098757-04:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Production"
+2020-08-16T21:48:26.2123364-04:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Source\TechStack\eCommerceSite\apigatewayservice"
+2020-08-16T21:48:37.0721909-04:00 [WRN] (Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware) requestId: 0HM229UK7FM08:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET.
+2020-08-16T21:48:37.0872765-04:00 [WRN] (Ocelot.Responder.Middleware.ResponderMiddleware) requestId: 0HM229UK7FM08:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/, request method: GET
+2020-08-16T21:48:52.5508405-04:00 [INF] (Microsoft.Hosting.Lifetime) Application is shutting down...
+2020-08-16T21:49:13.2356047-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5300"
+2020-08-16T21:49:13.2947360-04:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-08-16T21:49:13.3064999-04:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Production"
+2020-08-16T21:49:13.3088107-04:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Source\TechStack\eCommerceSite\apigatewayservice"
+2020-08-16T21:49:27.6403198-04:00 [WRN] (Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware) requestId: 0HM229V39S7PU:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /gateway/ui, verb: GET.
+2020-08-16T21:49:27.6534300-04:00 [WRN] (Ocelot.Responder.Middleware.ResponderMiddleware) requestId: 0HM229V39S7PU:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /gateway/ui, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/gateway/ui, request method: GET
+2020-08-16T21:54:08.0158794-04:00 [WRN] (Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware) requestId: 0HM229V39S7Q0:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /gateway/ui/WeatherForecast, verb: GET.
+2020-08-16T21:54:08.0186311-04:00 [WRN] (Ocelot.Responder.Middleware.ResponderMiddleware) requestId: 0HM229V39S7Q0:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /gateway/ui/WeatherForecast, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/gateway/ui/WeatherForecast, request method: GET
+2020-08-16T21:55:56.4687396-04:00 [WRN] (Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware) requestId: 0HM229V39S7Q0:00000003, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /gateway/ui/WeatherForecast, verb: GET.
+2020-08-16T21:55:56.4762569-04:00 [WRN] (Ocelot.Responder.Middleware.ResponderMiddleware) requestId: 0HM229V39S7Q0:00000003, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /gateway/ui/WeatherForecast, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/gateway/ui/WeatherForecast, request method: GET
+2020-08-16T21:56:23.9393339-04:00 [INF] (Microsoft.Hosting.Lifetime) Application is shutting down...
+2020-08-16T21:56:28.4242011-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5300"
+2020-08-16T21:56:28.4731629-04:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-08-16T21:56:28.4815641-04:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Production"
+2020-08-16T21:56:28.4842098-04:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Source\TechStack\eCommerceSite\apigatewayservice"
+2020-08-16T21:56:40.9676082-04:00 [WRN] (Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware) requestId: 0HM22A34E2FF3:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /gateway/ui/WeatherForecast, verb: GET.
+2020-08-16T21:56:40.9796796-04:00 [WRN] (Ocelot.Responder.Middleware.ResponderMiddleware) requestId: 0HM22A34E2FF3:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /gateway/ui/WeatherForecast, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/gateway/ui/WeatherForecast, request method: GET
+2020-08-16T21:57:39.0478566-04:00 [INF] (Microsoft.Hosting.Lifetime) Application is shutting down...

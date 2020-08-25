@@ -1,0 +1,2 @@
+{"@t":"2020-08-17T13:49:30.1314894Z","@mt":"Unregistering from Consul","SourceContext":"AppExtensions","ProcessId":40328,"ThreadId":2,"ApplicationName":"EcommUIService","Environment":"Development"}
+{"@t":"2020-08-17T13:49:30.1651518Z","@mt":"Application is shutting down...","SourceContext":"Microsoft.Hosting.Lifetime","ProcessId":40328,"ThreadId":2,"ApplicationName":"EcommUIService","Environment":"Development"}

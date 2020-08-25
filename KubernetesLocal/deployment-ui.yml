@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ecommwebui-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ecommwebui-pod
+  template:
+    metadata:
+      labels:
+        app: ecommwebui-pod
+    spec:
+      containers:
+      - name: ecommwebui-container
+        image: ecommwebui/spa:v1 #gcr.io/future-depth-264320/ecommwebui:v1
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "100m"
+        ports:
+        - containerPort: 80
+---    
+apiVersion: v1
+kind: Service
+metadata:
+  name: ecommwebui-service
+spec:
+  selector:
+    app: ecommwebui-pod
+  ports:
+  - port: 4200
+    targetPort: 80
+  type: LoadBalancer
+   
+

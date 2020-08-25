@@ -1,0 +1,235 @@
+2020-08-12T10:28:19.9274238-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "https://localhost:5001"
+2020-08-12T10:28:20.0026632-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5000"
+2020-08-12T10:28:20.0052587-04:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-08-12T10:28:20.0066430-04:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-08-12T10:28:20.0079108-04:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Source\TechStack\eCommerceSite\apigatewayservice"
+2020-08-12T10:28:31.1125657-04:00 [INF] (Microsoft.Hosting.Lifetime) Application is shutting down...
+2020-08-12T10:29:07.1128587-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "https://localhost:5001"
+2020-08-12T10:29:07.1633730-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5000"
+2020-08-12T10:29:07.1678992-04:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-08-12T10:29:07.1695027-04:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-08-12T10:29:07.1717939-04:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Source\TechStack\eCommerceSite\apigatewayservice"
+2020-08-12T10:29:16.9704952-04:00 [INF] (Microsoft.Hosting.Lifetime) Application is shutting down...
+2020-08-12T10:29:46.6876117-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "https://localhost:5001"
+2020-08-12T10:29:46.7430354-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5000"
+2020-08-12T10:29:46.7447576-04:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-08-12T10:29:46.7458258-04:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-08-12T10:29:46.7473778-04:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Source\TechStack\eCommerceSite\apigatewayservice"
+2020-08-12T10:30:17.8754595-04:00 [INF] (Microsoft.Hosting.Lifetime) Application is shutting down...
+2020-08-12T10:30:26.6355383-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5300"
+2020-08-12T10:30:26.6991074-04:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-08-12T10:30:26.7019442-04:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-08-12T10:30:26.7039038-04:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Source\TechStack\eCommerceSite\apigatewayservice"
+2020-08-12T10:31:48.9893323-04:00 [WRN] (Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware) requestId: 0HM1UPHP920LF:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /gateway/cs/api/basket, verb: GET.
+2020-08-12T10:31:48.9987046-04:00 [WRN] (Ocelot.Responder.Middleware.ResponderMiddleware) requestId: 0HM1UPHP920LF:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /gateway/cs/api/basket, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/gateway/cs/api/basket, request method: GET
+2020-08-12T10:32:01.0378696-04:00 [WRN] (Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware) requestId: 0HM1UPHP920LF:00000002, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /gateway/os/api/account/emailexists, verb: GET.
+2020-08-12T10:32:01.0401344-04:00 [WRN] (Ocelot.Responder.Middleware.ResponderMiddleware) requestId: 0HM1UPHP920LF:00000002, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /gateway/os/api/account/emailexists, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/gateway/os/api/account/emailexists, request method: GET
+2020-08-12T10:32:24.5703415-04:00 [WRN] (Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware) requestId: 0HM1UPHP920LF:00000003, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /gateway/os/api/account/register, verb: OPTIONS.
+2020-08-12T10:32:24.5769146-04:00 [WRN] (Ocelot.Responder.Middleware.ResponderMiddleware) requestId: 0HM1UPHP920LF:00000003, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /gateway/os/api/account/register, verb: OPTIONS. errors found in ResponderMiddleware. Setting error response for request path:/gateway/os/api/account/register, request method: OPTIONS
+2020-08-12T10:33:26.0716557-04:00 [WRN] (Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware) requestId: 0HM1UPHP920LF:00000004, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /gateway/os/api/account/register, verb: OPTIONS.
+2020-08-12T10:33:26.0802872-04:00 [WRN] (Ocelot.Responder.Middleware.ResponderMiddleware) requestId: 0HM1UPHP920LF:00000004, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /gateway/os/api/account/register, verb: OPTIONS. errors found in ResponderMiddleware. Setting error response for request path:/gateway/os/api/account/register, request method: OPTIONS
+2020-08-12T10:35:09.5052113-04:00 [INF] (Microsoft.Hosting.Lifetime) Application is shutting down...
+2020-08-12T10:43:01.4327312-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "https://localhost:5001"
+2020-08-12T10:43:01.4987228-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5000"
+2020-08-12T10:43:01.4992953-04:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-08-12T10:43:01.4994348-04:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-08-12T10:43:01.4996134-04:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Source\TechStack\eCommerceSite\ApiGatewayService"
+2020-08-12T10:43:02.1870885-04:00 [WRN] (Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware) requestId: 0HM1UPO1QHQ84:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET.
+2020-08-12T10:43:02.1923648-04:00 [WRN] (Ocelot.Responder.Middleware.ResponderMiddleware) requestId: 0HM1UPO1QHQ84:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/, request method: GET
+2020-08-12T10:43:38.5717927-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "https://localhost:5001"
+2020-08-12T10:43:38.6513114-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5000"
+2020-08-12T10:43:38.6519491-04:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-08-12T10:43:38.6521161-04:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-08-12T10:43:38.6523014-04:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Source\TechStack\eCommerceSite\ApiGatewayService"
+2020-08-12T10:43:39.2579591-04:00 [WRN] (Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware) requestId: 0HM1UPOCRPV99:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET.
+2020-08-12T10:43:39.2651812-04:00 [WRN] (Ocelot.Responder.Middleware.ResponderMiddleware) requestId: 0HM1UPOCRPV99:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/, request method: GET
+2020-08-12T10:44:09.4493697-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "https://localhost:5001"
+2020-08-12T10:44:09.5276266-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5000"
+2020-08-12T10:44:09.5284586-04:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-08-12T10:44:09.5285996-04:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-08-12T10:44:09.5286884-04:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Source\TechStack\eCommerceSite\ApiGatewayService"
+2020-08-12T10:44:10.0266795-04:00 [WRN] (Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware) requestId: 0HM1UPOM27BHD:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET.
+2020-08-12T10:44:10.0320556-04:00 [WRN] (Ocelot.Responder.Middleware.ResponderMiddleware) requestId: 0HM1UPOM27BHD:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/, request method: GET
+2020-08-12T11:00:58.0939420-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "https://localhost:5001"
+2020-08-12T11:00:58.1801807-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5000"
+2020-08-12T11:00:58.1807346-04:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-08-12T11:00:58.1808471-04:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-08-12T11:00:58.1809331-04:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Source\TechStack\eCommerceSite\ApiGatewayService"
+2020-08-12T11:00:59.0509329-04:00 [WRN] (Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware) requestId: 0HM1UQ22MIGS9:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET.
+2020-08-12T11:00:59.0586880-04:00 [WRN] (Ocelot.Responder.Middleware.ResponderMiddleware) requestId: 0HM1UQ22MIGS9:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/, request method: GET
+2020-08-12T11:01:45.5956675-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "https://localhost:5001"
+2020-08-12T11:01:45.6986825-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5000"
+2020-08-12T11:01:45.6996361-04:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-08-12T11:01:45.7009382-04:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-08-12T11:01:45.7020419-04:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Source\TechStack\eCommerceSite\ApiGatewayService"
+2020-08-12T11:01:46.3766717-04:00 [WRN] (Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware) requestId: 0HM1UQ2GQQI59:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET.
+2020-08-12T11:01:46.3821728-04:00 [WRN] (Ocelot.Responder.Middleware.ResponderMiddleware) requestId: 0HM1UQ2GQQI59:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/, request method: GET
+2020-08-12T11:04:41.3479812-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5300"
+2020-08-12T11:04:41.4166085-04:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-08-12T11:04:41.4198962-04:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-08-12T11:04:41.4242310-04:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Source\TechStack\eCommerceSite\apigatewayservice"
+2020-08-12T11:04:48.6356343-04:00 [WRN] (Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware) requestId: 0HM1UQ478G1DR:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /gateway/os/api/account/register, verb: OPTIONS.
+2020-08-12T11:04:48.6406688-04:00 [WRN] (Ocelot.Responder.Middleware.ResponderMiddleware) requestId: 0HM1UQ478G1DR:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /gateway/os/api/account/register, verb: OPTIONS. errors found in ResponderMiddleware. Setting error response for request path:/gateway/os/api/account/register, request method: OPTIONS
+2020-08-12T11:05:03.0582614-04:00 [INF] (Microsoft.Hosting.Lifetime) Application is shutting down...
+2020-08-12T11:05:35.6637135-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "https://localhost:5001"
+2020-08-12T11:05:35.7497068-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5000"
+2020-08-12T11:05:35.7504678-04:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-08-12T11:05:35.7508737-04:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-08-12T11:05:35.7512933-04:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Source\TechStack\eCommerceSite\ApiGatewayService"
+2020-08-12T11:05:36.3378243-04:00 [WRN] (Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware) requestId: 0HM1UQ4LCIGFG:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET.
+2020-08-12T11:05:36.3455163-04:00 [WRN] (Ocelot.Responder.Middleware.ResponderMiddleware) requestId: 0HM1UQ4LCIGFG:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/, request method: GET
+2020-08-12T11:07:16.4477399-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5300"
+2020-08-12T11:07:16.5204661-04:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-08-12T11:07:16.5254533-04:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-08-12T11:07:16.5322717-04:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Source\TechStack\eCommerceSite\apigatewayservice"
+2020-08-12T11:07:19.7762910-04:00 [WRN] (Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware) requestId: 0HM1UQ5K9RPRV:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /gateway/os/api/account/register, verb: OPTIONS.
+2020-08-12T11:07:19.7892069-04:00 [WRN] (Ocelot.Responder.Middleware.ResponderMiddleware) requestId: 0HM1UQ5K9RPRV:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /gateway/os/api/account/register, verb: OPTIONS. errors found in ResponderMiddleware. Setting error response for request path:/gateway/os/api/account/register, request method: OPTIONS
+2020-08-12T11:07:45.8613113-04:00 [INF] (Microsoft.Hosting.Lifetime) Application is shutting down...
+2020-08-12T11:08:06.2580055-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5300"
+2020-08-12T11:08:06.3252148-04:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-08-12T11:08:06.3336545-04:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-08-12T11:08:06.3375659-04:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Source\TechStack\eCommerceSite\apigatewayservice"
+2020-08-12T11:08:09.7650236-04:00 [WRN] (Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware) requestId: 0HM1UQ636CK6L:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /gateway/os/api/account/register, verb: OPTIONS.
+2020-08-12T11:08:09.7779221-04:00 [WRN] (Ocelot.Responder.Middleware.ResponderMiddleware) requestId: 0HM1UQ636CK6L:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /gateway/os/api/account/register, verb: OPTIONS. errors found in ResponderMiddleware. Setting error response for request path:/gateway/os/api/account/register, request method: OPTIONS
+2020-08-12T11:08:18.1646264-04:00 [INF] (Microsoft.Hosting.Lifetime) Application is shutting down...
+2020-08-12T11:09:04.6700347-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5300"
+2020-08-12T11:09:04.7542695-04:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-08-12T11:09:04.7560051-04:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-08-12T11:09:04.7576669-04:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Source\TechStack\eCommerceSite\apigatewayservice"
+2020-08-12T11:09:09.0940827-04:00 [WRN] (Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware) requestId: 0HM1UQ6KS8HTA:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /gateway/os/api/account/register, verb: OPTIONS.
+2020-08-12T11:09:09.1075041-04:00 [WRN] (Ocelot.Responder.Middleware.ResponderMiddleware) requestId: 0HM1UQ6KS8HTA:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /gateway/os/api/account/register, verb: OPTIONS. errors found in ResponderMiddleware. Setting error response for request path:/gateway/os/api/account/register, request method: OPTIONS
+2020-08-12T11:09:44.8109495-04:00 [INF] (Microsoft.Hosting.Lifetime) Application is shutting down...
+2020-08-12T11:09:56.8030089-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5300"
+2020-08-12T11:09:56.8827892-04:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-08-12T11:09:56.8858391-04:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-08-12T11:09:56.8881905-04:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Source\TechStack\eCommerceSite\apigatewayservice"
+2020-08-12T11:10:01.7728692-04:00 [WRN] (Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware) requestId: 0HM1UQ74IOUQN:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /gateway/os/api/account/register, verb: OPTIONS.
+2020-08-12T11:10:01.7792191-04:00 [WRN] (Ocelot.Responder.Middleware.ResponderMiddleware) requestId: 0HM1UQ74IOUQN:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /gateway/os/api/account/register, verb: OPTIONS. errors found in ResponderMiddleware. Setting error response for request path:/gateway/os/api/account/register, request method: OPTIONS
+2020-08-12T11:10:27.4472492-04:00 [INF] (Microsoft.Hosting.Lifetime) Application is shutting down...
+2020-08-12T11:10:38.7940631-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5300"
+2020-08-12T11:10:38.8669363-04:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-08-12T11:10:38.8741749-04:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-08-12T11:10:38.8765895-04:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Source\TechStack\eCommerceSite\apigatewayservice"
+2020-08-12T11:10:44.5820436-04:00 [WRN] (Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware) requestId: 0HM1UQ7HB0GCV:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /gateway/os/api/account/register, verb: OPTIONS.
+2020-08-12T11:10:44.5934509-04:00 [WRN] (Ocelot.Responder.Middleware.ResponderMiddleware) requestId: 0HM1UQ7HB0GCV:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /gateway/os/api/account/register, verb: OPTIONS. errors found in ResponderMiddleware. Setting error response for request path:/gateway/os/api/account/register, request method: OPTIONS
+2020-08-12T11:10:58.3544104-04:00 [INF] (Microsoft.Hosting.Lifetime) Application is shutting down...
+2020-08-12T11:11:16.8611286-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5300"
+2020-08-12T11:11:16.9185009-04:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-08-12T11:11:16.9220592-04:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-08-12T11:11:16.9254762-04:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Source\TechStack\eCommerceSite\apigatewayservice"
+2020-08-12T11:11:26.7812465-04:00 [ERR] (Ocelot.Errors.Middleware.ExceptionHandlerMiddleware) requestId: 0HM1UQ7TQFKKN:00000001, previousRequestId: no previous request id, message: Exception caught in global error handler, exception message: No such host is known., exception stack:    at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Consul.GetRequest`1.Execute(CancellationToken ct)
+   at Ocelot.Provider.Consul.Consul.Get()
+   at Ocelot.LoadBalancer.LoadBalancers.LeastConnectionCreator.<>c__DisplayClass0_0.<<Create>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Ocelot.LoadBalancer.LoadBalancers.LeastConnection.Lease(HttpContext httpContext)
+   at Ocelot.LoadBalancer.Middleware.LoadBalancingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.DownstreamPathManipulation.Middleware.ClaimsToDownstreamPathMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.QueryStrings.Middleware.ClaimsToQueryStringMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Headers.Middleware.ClaimsToHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Authorisation.Middleware.AuthorisationMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Claims.Middleware.ClaimsToClaimsMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Authentication.Middleware.AuthenticationMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.RequestId.Middleware.RequestIdMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.RateLimit.Middleware.ClientRateLimitMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Request.Middleware.DownstreamRequestInitialiserMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Headers.Middleware.HttpHeadersTransformationMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Security.Middleware.SecurityMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Multiplexer.MultiplexingMiddleware.Fire(HttpContext httpContext, RequestDelegate next)
+   at Ocelot.Multiplexer.MultiplexingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Responder.Middleware.ResponderMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Errors.Middleware.ExceptionHandlerMiddleware.Invoke(HttpContext httpContext), inner exception message No such host is known., inner exception stack    at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken) RequestId: 0HM1UQ7TQFKKN:00000001
+System.Net.Http.HttpRequestException: No such host is known.
+ ---> System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Consul.GetRequest`1.Execute(CancellationToken ct)
+   at Ocelot.Provider.Consul.Consul.Get()
+   at Ocelot.LoadBalancer.LoadBalancers.LeastConnectionCreator.<>c__DisplayClass0_0.<<Create>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Ocelot.LoadBalancer.LoadBalancers.LeastConnection.Lease(HttpContext httpContext)
+   at Ocelot.LoadBalancer.Middleware.LoadBalancingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.DownstreamPathManipulation.Middleware.ClaimsToDownstreamPathMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.QueryStrings.Middleware.ClaimsToQueryStringMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Headers.Middleware.ClaimsToHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Authorisation.Middleware.AuthorisationMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Claims.Middleware.ClaimsToClaimsMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Authentication.Middleware.AuthenticationMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.RequestId.Middleware.RequestIdMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.RateLimit.Middleware.ClientRateLimitMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Request.Middleware.DownstreamRequestInitialiserMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Headers.Middleware.HttpHeadersTransformationMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Security.Middleware.SecurityMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Multiplexer.MultiplexingMiddleware.Fire(HttpContext httpContext, RequestDelegate next)
+   at Ocelot.Multiplexer.MultiplexingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Responder.Middleware.ResponderMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Errors.Middleware.ExceptionHandlerMiddleware.Invoke(HttpContext httpContext)
+2020-08-12T11:11:41.7183102-04:00 [INF] (Microsoft.Hosting.Lifetime) Application is shutting down...
+2020-08-12T11:57:05.7586635-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5300"
+2020-08-12T11:57:05.8267096-04:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-08-12T11:57:05.8288619-04:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-08-12T11:57:05.8304578-04:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Source\TechStack\eCommerceSite\apigatewayservice"
+2020-08-12T11:59:45.9033988-04:00 [INF] (Microsoft.Hosting.Lifetime) Application is shutting down...
+2020-08-12T21:35:48.6827596-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "https://localhost:5001"
+2020-08-12T21:35:48.7854514-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5000"
+2020-08-12T21:35:48.7892135-04:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-08-12T21:35:48.7925222-04:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-08-12T21:35:48.7953035-04:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Source\TechStack\eCommerceSite\apigatewayservice"
+2020-08-12T21:36:52.2864185-04:00 [INF] (Microsoft.Hosting.Lifetime) Application is shutting down...
+2020-08-12T21:37:12.5354057-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "https://localhost:5001"
+2020-08-12T21:37:12.6172802-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5000"
+2020-08-12T21:37:12.6475846-04:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-08-12T21:37:12.6511591-04:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Production"
+2020-08-12T21:37:12.6766206-04:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Source\TechStack\eCommerceSite\apigatewayservice"
+2020-08-12T21:37:31.1364592-04:00 [INF] (Microsoft.Hosting.Lifetime) Application is shutting down...

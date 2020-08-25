@@ -1,0 +1,48 @@
+# kubectl create secret generic order-appsettings --from-file=./appsettings.secrets.json
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orderapi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: order-pod
+  template:
+    metadata:
+      labels:
+        app: order-pod
+    spec:
+      containers:
+      - name: orderapi
+        image: acrecommprod.azurecr.io/orderservice:v1
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "100m"
+        ports:
+        - containerPort: 80
+        volumeMounts:
+        - name: secrets
+          mountPath: /app/secrets
+          readOnly: true
+      volumes:
+      - name: secrets
+        secret:
+          secretName: order-appsettings
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: order-service
+spec:
+  selector:
+    app: order-pod
+  ports:
+  - port: 5000
+    targetPort: 80
+  type: ClusterIP
+  #  nodePort: 31002
+  #type: NodePort
+
+

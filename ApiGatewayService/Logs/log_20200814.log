@@ -1,0 +1,26 @@
+2020-08-14T21:14:33.2978952-04:00 [FTL] (Microsoft.AspNetCore.Hosting.Diagnostics) Application startup exception
+System.AggregateException: One or more errors occurred. (Unable to start Ocelot, errors are: Upstream Path Template {url} doesnt start with forward slash)
+ ---> System.Exception: Unable to start Ocelot, errors are: Upstream Path Template {url} doesnt start with forward slash
+   at Ocelot.Middleware.OcelotMiddlewareExtensions.ThrowToStopOcelotStarting(Response config)
+   at Ocelot.Middleware.OcelotMiddlewareExtensions.CreateConfiguration(IApplicationBuilder builder)
+   at Ocelot.Middleware.OcelotMiddlewareExtensions.UseOcelot(IApplicationBuilder builder, OcelotPipelineConfiguration pipelineConfiguration)
+   at Ocelot.Middleware.OcelotMiddlewareExtensions.UseOcelot(IApplicationBuilder builder)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at ApiGatewayService.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in C:\Source\TechStack\eCommerceSite\apigatewayservice\Startup.cs:line 71
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass13_0.<UseStartup>b__2(IApplicationBuilder app)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2020-08-14T21:15:34.4160990-04:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5000"
+2020-08-14T21:15:34.4821585-04:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-08-14T21:15:34.4839821-04:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Production"
+2020-08-14T21:15:34.4854556-04:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Source\TechStack\ecommercesite\apigatewayservice"
+2020-08-14T21:15:47.2088719-04:00 [INF] (Microsoft.Hosting.Lifetime) Application is shutting down...
