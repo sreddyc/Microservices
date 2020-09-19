@@ -1,0 +1,19 @@
+kubectl config get-contexts
+az aks get-credentials --resource-group rg-test-ecomm-001 --name testecommcluster
+az aks update -n testecommcluster -g rg-test-ecomm-001 --attach-acr acrecommtest
+az acr login --name acrecommtest
+kubectl config use-context <yourAKSClusterName>
+
+
+docker tag apigateway/api acrecommtest.azurecr.io/apigateway:v2
+docker tag ecommwebui/spa acrecommtest.azurecr.io/ecommwebui:v1
+docker tag productservice/api acrecommtest.azurecr.io/productservice:v1
+docker tag orderservice/api acrecommtest.azurecr.io/orderservice:v5
+docker tag cartservice/api acrecommtest.azurecr.io/cartservice:v1
+
+
+docker push acrecommtest.azurecr.io/apigateway:v2
+docker push acrecommtest.azurecr.io/ecommwebui:v1
+docker push acrecommtest.azurecr.io/productservice:v1
+docker push acrecommtest.azurecr.io/orderservice:v5
+docker push acrecommtest.azurecr.io/cartservice:v1

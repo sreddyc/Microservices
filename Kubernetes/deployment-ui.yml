@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: ecommwebui-container
-        image: acrecommprod.azurecr.io/ecommwebui:v1 #gcr.io/future-depth-264320/ecommwebui:v1
+        image: acrecommtest.azurecr.io/ecommwebui:v1 #gcr.io/future-depth-264320/ecommwebui:v1
         resources:
           limits:
             memory: "128Mi"

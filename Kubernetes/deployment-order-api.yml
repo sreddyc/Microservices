@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: orderapi
-        image: acrecommprod.azurecr.io/orderservice:v1
+        image: acrecommtest.azurecr.io/orderservice:v5
         resources:
           limits:
             memory: "128Mi"

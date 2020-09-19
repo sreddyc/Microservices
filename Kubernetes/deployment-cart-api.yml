@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: cartapi
-        image: acrecommprod.azurecr.io/cartservice:v1
+        image: acrecommtest.azurecr.io/cartservice:v1
         resources:
           limits:
             memory: "128Mi"

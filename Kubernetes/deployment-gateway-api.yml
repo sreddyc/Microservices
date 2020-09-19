@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: apigateway
-        image: acrecommprod.azurecr.io/apigateway:v1 #gcr.io/future-depth-264320/apigateway:v1
+        image: acrecommtest.azurecr.io/apigateway:v2 #gcr.io/future-depth-264320/apigateway:v1
         resources:
           limits:
             memory: "128Mi"
